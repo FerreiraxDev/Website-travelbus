@@ -1,0 +1,320 @@
+/* 
+<i class="fa-solid fa-location-dot"></i> ===> icon de localização
+<i class="fa-solid fa-bus"></i> ===> icon bus
+<i class="fa-solid fa-calendar-days"></i> ===> icon calendar
+<i class="fa-solid fa-magnifying-glass"></i> ===> icon lupa
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #37473F;
+    --secondary: #D1C23A;
+    --black: #000;
+    --white: #fff;
+    --details-letter: #504F4F;
+    --bg-all: #2C2B2B;
+    --lalezar: 'Lalezar', cursive;
+}
+
+body{
+    background-color: var(--bg-all);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: var(--primary);
+}
+
+.container-header{
+    max-width: 1600px;
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.img-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    .img-logo img{
+    width: 70px;
+    height: 70px;
+    }
+
+    .img-logo h4{
+        font-size: 30px;
+        margin-left: 10px;
+        font-family: var(--lalezar);
+        color: var(--white);
+        line-height: 56px;
+        font-style: normal;
+}
+
+    .color-text-bus{
+    color: var(--secondary);
+}
+
+
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu-items ul, li a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--lalezar);
+}
+
+.menu-items > ul > li > a:nth-child(1){
+    margin-right: 40px;
+}
+
+.menu-items > ul > li > a:nth-child(2){
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 15px;
+    padding: 4px 20px;
+    background-color: var(--secondary);
+}
+
+.container-banner-search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    background-image: url('/img/bus-banner-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 68%;
+    background-color: aqua;
+}
+
+.flex-center-box, .container-form-two{
+    display: flex;
+    align-items: center;
+}
+
+.container-center-form{
+    background-color: var(--primary);
+    width: 690px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.form-search-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tittle-form{
+    padding: 15px 0 10px 0;
+}
+
+.tittle-form > span{
+    font-family: var(--lalezar);
+    color: var(--white);
+    font-size: 19px;
+}
+
+.tittle-form > i{
+    color: var(--secondary);
+}
+
+.input-search-one{
+    margin-bottom: 10px;
+}
+
+.input-search-one > input{
+    padding: 5px 70px;
+}
+
+.input-search-one > i{
+    position: relative;
+    left: 30px;
+}
+
+.input-search-two > input{
+    padding: 5px 70px;
+}
+
+.input-search-two > i{
+    position: relative;
+    left: 30px;
+}
+
+.form-calendar-two{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.input-calendar-one, .input-calendar-two{
+    padding-top: 20px;
+}
+
+.form-calendar-two > div > input{
+    padding: 5px 25px;
+}
+
+.form-calendar-two > div > i{
+    position: relative;
+    left: 25px;
+}
+
+.btn-search{
+    display: flex;
+    align-items: center;
+}
+
+.box-btn{
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.btn-action{
+    font-size: 22px;
+    border: 1px solid var(--black);
+    padding: 0px 45px;
+    border-radius: 8px;
+    background-color: var(--secondary);
+    font-family: var(--lalezar);
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.box-btn > i{
+    position: relative;
+    left: 35px;
+}
+
+
+/* ========SECTION GALLERY========== */
+
+
+.gallery-place{
+    width: 100%;
+    display: flex;
+}
+
+.container-max-width{
+    max-width: 1400px;
+    width: 100%;
+    height: 500px;
+    background-color: var(--primary);
+    margin: 0 auto;
+}
+
+.container-box-img-place{
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+}
+
+.container-left-boxes{
+    margin-right: 10px;
+}
+
+.box-img-place-large-left, .box-img-place-large-right{
+    width: 302px;
+    height: 140px;
+    background-color: var(--white);
+}
+
+.box-img-place-large-right{
+    margin-top: 5px;
+}
+
+
+.box-img-two-small-left{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.box-img-two-small-right{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.box-small-left-left, .box-small-left-right,
+ .box-small-right-left, .box-small-right-right{
+    width: 148px;
+    height: 140px;
+    background-color: var(--white);
+}
+
+.box-img-two-small-left > div:nth-child(2){
+    margin-left: 6px;
+}
+
+.box-img-two-small-right > div:nth-child(2){
+    margin-left: 6px;
+}
+
+.link-text{
+    display: flex;
+    justify-content: end;
+    padding: 7em 1em;
+}
+
+.link-text > a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: var(--lalezar);
+}
+
+.footer-wh{
+    width: 100%;
+    height: 200px;
+    background-color: var(--secondary);
+    display: flex;
+}
+
+.footer-container{
+    margin: 0 auto;
+}
+
+.box-container-items{
+    display: flex;
+    text-align: center;
+}
+
+.box-container-items > div{
+    margin-left: 4em;
+}
+.box-container-items > div >h3{
+    padding-bottom: 6px;
+    font-family: var(--lalezar);
+    font-size: 16px;
+}
+
+.box-container-items > div > span{
+    font-family: var(--lalezar);
+    font-size: 14px;
+    color: var(--details-letter);
+    cursor: pointer;
+}
